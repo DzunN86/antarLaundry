@@ -5,11 +5,11 @@ import { Logo } from '../../assets'
 
 const Splash = ({ navigation }) => {
     
-    // useEffect(() => {
-    //     setTimeout( () => {
-    //         navigation.replace('MainApp')
-    //     }, 3000)
-    // }, [navigation]);
+    useEffect(() => {
+        setTimeout( () => {
+            navigation.replace('MainApp')
+        }, 3000)
+    }, [navigation]);
     
     return (
         
