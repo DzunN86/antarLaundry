@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, ImageBackground, Dimensions, Image } from 'react-native'
 import { ImageHeader, Logo } from '../../assets'
+import { Saldo } from '../../components'
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
                     <Text style={styles.username}>Dzun</Text>
                 </View>
             </ImageBackground>
+            <Saldo />
         </View>
     )
 }
@@ -37,7 +39,7 @@ const styles = StyleSheet.create({
     },
 
     hello: {
-        marginTop: windowHeight*0.025
+        marginTop: windowHeight*0.030
     },
     
     selamat: {
