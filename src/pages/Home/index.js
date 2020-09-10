@@ -1,21 +1,32 @@
 import React from 'react'
 import { StyleSheet, Text, View, ImageBackground, Dimensions, Image } from 'react-native'
 import { ImageHeader, Logo } from '../../assets'
-import { Saldo } from '../../components'
+import { Saldo, ButtonIcon } from '../../components'
 
 const Home = () => {
     return (
-        <View style={styles.page}>
-            <ImageBackground source={ ImageHeader } style={styles.header}>
-                <Image source={ Logo } style={ styles.logo} />
-                <View style={styles.hello}>
-                    <Text style={styles.selamat}>Selamat Datang</Text>
-                    <Text style={styles.username}>Dzun</Text>
-                </View>
-            </ImageBackground>
-            <Saldo />
+      <View style={styles.page}>
+        <ImageBackground source={ImageHeader} style={styles.header}>
+          <Image source={Logo} style={styles.logo} />
+          <View style={styles.hello}>
+            <Text style={styles.selamat}>Selamat Datang</Text>
+            <Text style={styles.username}>Dzun</Text>
+          </View>
+        </ImageBackground>
+        <Saldo />
+        <View style={styles.layanan}>
+          <Text style={styles.label}>Layanan Kami</Text>
+          <View style={styles.iconLayanan}>
+            <ButtonIcon title="Kiloan" type="layanan"/>
+            <ButtonIcon title="Satuan" type="layanan"/>
+            <ButtonIcon title="VIP" type="layanan"/>
+            <ButtonIcon title="Karpet" type="layanan"/>
+            <ButtonIcon title="Setrika Saja" type="layanan"/>
+            <ButtonIcon title="Ekspress" type="layanan"/>
+          </View>
         </View>
-    )
+      </View>
+    );
 }
 
 export default Home
@@ -48,5 +59,20 @@ const styles = StyleSheet.create({
     username: {
         fontSize: 21,
         fontWeight: 'bold'
+    },
+    
+    layanan: {
+        paddingLeft: 30,
+        paddingTop: 15
+    },
+    label: {
+        fontSize: 18,
+        fontWeight: 'bold'
+    },
+    iconLayanan: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginTop: 12,
+        flexWrap: 'wrap'
     }
 })
