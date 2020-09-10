@@ -13,4 +13,19 @@ import IconEkspress from './ekspress.svg'
 import IconSetrika from './setrika.svg'
 import IconKarpet from './karpet.svg'
 
-export { Home, HomeActive, Pesanan, PesananActive, Akun, AkunActive, IconAddSaldo, IconGetPoint, IconKiloan, IconVIP, IconSatuan, IconEkspress, IconSetrika, IconKarpet }
+export {
+    Home,
+    HomeActive,
+    Pesanan,
+    PesananActive,
+    Akun,
+    AkunActive,
+    IconAddSaldo,
+    IconGetPoint,
+    IconKiloan,
+    IconVIP,
+    IconSatuan,
+    IconEkspress,
+    IconSetrika,
+    IconKarpet
+}
