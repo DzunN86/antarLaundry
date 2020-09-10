@@ -17,13 +17,16 @@ const Home = () => {
         <View style={styles.layanan}>
           <Text style={styles.label}>Layanan Kami</Text>
           <View style={styles.iconLayanan}>
-            <ButtonIcon title="Kiloan" type="layanan"/>
-            <ButtonIcon title="Satuan" type="layanan"/>
-            <ButtonIcon title="VIP" type="layanan"/>
-            <ButtonIcon title="Karpet" type="layanan"/>
-            <ButtonIcon title="Setrika Saja" type="layanan"/>
-            <ButtonIcon title="Ekspress" type="layanan"/>
+            <ButtonIcon title="Kiloan" type="layanan" />
+            <ButtonIcon title="Satuan" type="layanan" />
+            <ButtonIcon title="VIP" type="layanan" />
+            <ButtonIcon title="Karpet" type="layanan" />
+            <ButtonIcon title="Setrika Saja" type="layanan" />
+            <ButtonIcon title="Ekspress" type="layanan" />
           </View>
+        </View>
+        <View style={styles.pesananAktif}>
+          <Text style={styles.label}>Pesanan Aktif</Text>
         </View>
       </View>
     );
@@ -74,5 +77,13 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         marginTop: 12,
         flexWrap: 'wrap'
+    },
+    pesananAktif: {
+        paddingTop: 10,
+        paddingHorizontal: 30,
+        backgroundColor: '#ECECEC',
+        flex: 1,
+        borderTopRightRadius: 20,
+        borderTopLeftRadius: 20,   
     }
 })
