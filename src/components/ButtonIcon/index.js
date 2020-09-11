@@ -13,7 +13,7 @@ const ButtonIcon = ({ title, type }) => {
         if(title === "VIP") return <IconVIP />
         if(title === "Karpet") return <IconKarpet />
         if(title === "Setrika Saja") return <IconSetrika />
-        if(title === "Ekspress") return <IconSetrika />
+        if(title === "Ekspress") return <IconEkspress />
 
         return <IconAddSaldo/>
     }
@@ -31,7 +31,7 @@ export default ButtonIcon
 
 const styles = StyleSheet.create({
     container: (type) => ({
-        marginButtom: 12,
+        marginBottom : type === "layanan" ? 12 : 0,
         marginRight: type === "layanan" ? 30 : 0
     }),
     button: (type) => ({
