@@ -12,6 +12,7 @@ import IconSatuan from './satuan.svg'
 import IconEkspress from './ekspress.svg'
 import IconSetrika from './setrika.svg'
 import IconKarpet from './karpet.svg'
+import IconPesananAktif from './pesananAktif.svg'
 
 export {
     Home,
@@ -27,5 +28,6 @@ export {
     IconSatuan,
     IconEkspress,
     IconSetrika,
-    IconKarpet
+    IconKarpet,
+    IconPesananAktif
 }
